@@ -1,12 +1,11 @@
 package br.com.fiap.investSimples.model;
 
-//import java.util.Date;
-import java.time.LocalDate;
+import java.util.Date;
 
 public class T_entradas {
 
 	private int id; /* INTEGER NOT NULL, */
-	private LocalDate dataLancamento; /* DATE NOT NULL, */
+	private Date dataLancamento; /* DATE NOT NULL, */
 	private double valor;/* NUMBER(10,2) NOT NULL, */
 	private String tipo;/* VARCHAR2(40), */
 	private String descricao;/* VARCHAR2(100), */
@@ -16,7 +15,7 @@ public class T_entradas {
 		super();
 	}
 	
-	public T_entradas(int id, LocalDate dataLancamento, double valor, String tipo, String descricao, int cliente) {
+	public T_entradas(int id, Date dataLancamento, double valor, String tipo, String descricao, int cliente) {
 		super();
 		this.id = id;
 		this.dataLancamento = dataLancamento;
@@ -39,7 +38,7 @@ public class T_entradas {
 		return dataLancamento;
 	}
 
-	public void setDataLancamento(LocalDate dataLancamento) {
+	public void setDataLancamento(Date dataLancamento) {
 		this.dataLancamento = dataLancamento;
 	}
 
