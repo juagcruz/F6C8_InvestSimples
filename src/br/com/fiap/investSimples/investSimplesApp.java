@@ -17,10 +17,10 @@ public class investSimplesApp {
 	public static void main(String[] args) {
 
 		T_entradas entrada = new T_entradas();
-		
+
 		entrada.setTipo("Salario");
 		entrada.setDescricao("Salario Ref. Setembro");
-		entrada.setDataLancamento(Date.);
+		entrada.setDataLancamento(Date.UTC(2023, 11, 11, 0, 0, 0));
 		entrada.setValor(2500.0);
 		entrada.setCliente(1);
 
