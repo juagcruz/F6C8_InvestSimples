@@ -34,7 +34,7 @@ public class T_entradas {
 		this.id = id;
 	}
 
-	public LocalDate getDataLancamento() {
+	public Date getDataLancamento() {
 		return dataLancamento;
 	}
 

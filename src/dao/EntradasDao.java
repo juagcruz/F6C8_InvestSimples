@@ -83,7 +83,6 @@ public class EntradasDao {
 			conexao.close();
 
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 			System.out.println("Erro de SQL");
 		}
@@ -106,7 +105,7 @@ public class EntradasDao {
 			if (rs.next()) {
 
 				selectEntrada.setId(rs.getInt("id_entrada"));
-				selectEntrada.setDataLancamento(rs.getInstance("dt_entrada"));
+				selectEntrada.setDataLancamento(rs.getDate("dt_entrada"));
 				selectEntrada.setValor(rs.getDouble("nr_valor_entrada"));
 				selectEntrada.setTipo(rs.getString("nm_tipo_entrada"));
 				selectEntrada.setDescricao(rs.getString("nm_desc_entrada"));

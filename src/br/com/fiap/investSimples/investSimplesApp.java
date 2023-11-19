@@ -20,13 +20,15 @@ public class investSimplesApp {
 
 		entrada.setTipo("Salario");
 		entrada.setDescricao("Salario Ref. Setembro");
-		entrada.setDataLancamento(Date.UTC(2023, 11, 11, 0, 0, 0));
+//		Date date = new Date();
+//		java.sql.Date sqldate = new java.sql.Date(date.getTime());
+//		entrada.setDataLancamento();
 		entrada.setValor(2500.0);
 		entrada.setCliente(1);
 
 		EntradasDao entDao = new EntradasDao(ConexaoFintech.abrirConexao());
 
-		entDao.gravar(entrada);
+		// entDao.gravar(entrada);
 
 		// entDao.buscarEntradaPorId(1);
 
